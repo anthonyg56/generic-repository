@@ -3,7 +3,6 @@ import { ObjectID } from "mongodb"
 import { IUser } from "../interfaces/entities"
 import * as bcrypt from 'bcrypt'
 
-/* Generic Services that set up query calls made to a repository */
 export default class User {
   private readonly repository = new Repository<IUser>('users')
   public user: IUser
